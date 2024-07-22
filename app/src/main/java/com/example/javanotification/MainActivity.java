@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         NotificationManager notificationManager = getSystemService(NotificationManager.class);
         notificationManager.createNotificationChannel(channel);
             Notification notification= new NotificationCompat.Builder(this, "TEST_CHANNEL")
+                    //строки с  отображением информации
                     .setContentTitle("Эй овощь")
                     .setContentText("У тебя новое сообщение")
                     .setSmallIcon(R.mipmap.ic_launcher)
