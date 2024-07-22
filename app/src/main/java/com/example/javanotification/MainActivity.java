@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-        //уведомление
+        //уведомление ля чата
         NotificationChannel channel =null ;
         if (Build.VERSION.SDK_INT>= Build.VERSION_CODES.O) {
          channel =new NotificationChannel(
