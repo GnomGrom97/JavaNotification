@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-        //уведомление ля чата
+        //уведомление
         NotificationChannel channel =null ;
         if (Build.VERSION.SDK_INT>= Build.VERSION_CODES.O) {
          channel =new NotificationChannel(
@@ -29,7 +29,6 @@ public class MainActivity extends AppCompatActivity {
         NotificationManager notificationManager = getSystemService(NotificationManager.class);
         notificationManager.createNotificationChannel(channel);
             Notification notification= new NotificationCompat.Builder(this, "TEST_CHANNEL")
-                    //строки с  отображением информации
                     .setContentTitle("Эй овощь")
                     .setContentText("У тебя новое сообщение")
                     .setSmallIcon(R.mipmap.ic_launcher)
